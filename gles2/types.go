@@ -11,7 +11,10 @@ package gles2
 #include <stdlib.h>
 #include "cgo_helpers.h"
 */
-import "C"
+import (
+	"C"
+	"unsafe"
+)
 
 // Byte type as declared in GLES2/gl2.h:56
 type Byte byte
@@ -72,3 +75,7 @@ type Sizei int32
 
 // Ubyte type as declared in GLES2/gl2.h:75
 type Ubyte byte
+
+func PtrOffset(offset int) unsafe.Pointer {
+	return unsafe.Pointer(uintptr(offset))
+}
