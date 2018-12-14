@@ -32,7 +32,7 @@ type Ushort uint16
 type Void [0]byte
 
 // Sync as declared in GLES2/gl2.h:62
-type Sync C.GLsync
+// type Sync C.GLsync
 
 // Int64 type as declared in GLES2/gl2.h:63
 type Int64 int64
