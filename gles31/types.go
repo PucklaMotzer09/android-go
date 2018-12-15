@@ -5,6 +5,10 @@
 
 package gles31
 
+import (
+	"unsafe"
+)
+
 /*
 #cgo LDFLAGS: -lGLESv3
 #include <GLES3/gl31.h>

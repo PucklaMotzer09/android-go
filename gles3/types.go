@@ -5,6 +5,10 @@
 
 package gles3
 
+import (
+	"unsafe"
+)
+
 /*
 #cgo LDFLAGS: -lGLESv3
 #include <GLES3/gl3.h>
