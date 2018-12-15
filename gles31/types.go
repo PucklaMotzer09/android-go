@@ -75,3 +75,7 @@ type Ubyte byte
 
 // Half type as declared in GLES3/gl31.h:523
 type Half uint16
+
+func PtrOffset(offset int) unsafe.Pointer {
+	return unsafe.Pointer(uintptr(offset))
+}
